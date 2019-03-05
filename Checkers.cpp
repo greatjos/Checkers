@@ -142,7 +142,7 @@ std::map<int,std::vector<int> > Checkers::return_jumpMoves()
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//performs jump moves for the player, for more info => www.youngjoshua.com/projects/checkers
+//performs jump moves for the player, for more info => www.youngjoshua.org/projects/checkers
 int Checkers::doJump(int prev_row, int prev_col, int new_row, int new_col)
 {
 	if (jmp_repeat)
@@ -426,7 +426,7 @@ bool Checkers::forceJump(std::string**& c_board)
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//Performs a jump move for the computer, for more info => www.youngjoshua.com/projects/checkers
+//Performs a jump move for the computer, for more info => www.youngjoshua.org/projects/checkers
 void Checkers::CPUdoJump(int& prevrow,int& prevcolum,std::map<int,std::vector<int> >& cpu_jump)
 {
 	int bestoutcome = -1000;
@@ -478,7 +478,7 @@ void Checkers::CPUdoJump(int& prevrow,int& prevcolum,std::map<int,std::vector<in
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//performs a jump move for the computer and checks to see if another jump is possible, for more info => www.youngjoshua.com
+//performs a jump move for the computer and checks to see if another jump is possible, for more info => www.youngjoshua.org
 void Checkers::keepJump(int r,int c,std::vector<std::pair<int,int> >& save_jmp,std::string**& c_board,bool isKing)
 {
 	if (!isKing)
@@ -1533,7 +1533,7 @@ bool Checkers::playerMove(int rw,int col, int rwm, int colm)
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//this is where the computer starts a move and performs a jump move if possible, for mor info => www.youngjoshua.com/projects/checkers
+//this is where the computer starts a move and performs a jump move if possible, for mor info => www.youngjoshua.org/projects/checkers
 void Checkers::CpuMove(bool& game_over)
 {
 	int row = -1;
@@ -1733,7 +1733,7 @@ std::string** Checkers::copyBoard(std::string**& orig_board)
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//finds a position for the cpu to move one of its pieces for more info => www.youngjoshua.com/projects/checkers
+//finds a position for the cpu to move one of its pieces for more info => www.youngjoshua.org/projects/checkers
 void Checkers::findMovePosition(int& row,int& colmun,int& prevrow,int& prevcolum,bool& isJump,bool& game_over)
 {
 
@@ -2173,7 +2173,7 @@ int Checkers::MinMaxCPUdoJump(std::string**& temp_board,int depth,std::map<int,s
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//performs jump moves for the computer and checks if more jumps are possible for more info => www.youngjoshua.com/projects/checkers
+//performs jump moves for the computer and checks if more jumps are possible for more info => www.youngjoshua.org/projects/checkers
 void Checkers::CPUminMaxJump(int r,int c,std::string**& c_board,bool isKing)
 {
 	if (!isKing)
@@ -2950,7 +2950,7 @@ int Checkers::P1MinMaxdoJump(std::string**& temp_board,int depth,std::map<int,st
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//simulates jump moves for the player and checks if a jump move is possible for more info => www.youngjoshua.com/projects/checkers
+//simulates jump moves for the player and checks if a jump move is possible for more info => www.youngjoshua.org/projects/checkers
 void Checkers::P1minMaxJump(int r,int c,std::string**& c_board,bool isKing)
 {
 	if (!isKing)
@@ -3617,7 +3617,7 @@ void Checkers::P1minMaxJump(int r,int c,std::string**& c_board,bool isKing)
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//the minimax algorithm to find the best possible for the computer to move to - for more info => www.youngjoshua.com/projects/checkers
+//the minimax algorithm to find the best possible for the computer to move to - for more info => www.youngjoshua.org/projects/checkers
 int Checkers::minimaxAlg(bool isplayer, std::string**& temp_board,int depth)
 {
 	if (depth <= 0)
